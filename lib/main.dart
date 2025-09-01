@@ -1,31 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'text_widget.dart';
 import 'images_widget.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
+      home: Praktikum(),
+      debugShowCheckedModeBanner: false, // Menghilangkan banner debug
+    );
+  }
+}
+
+class Praktikum extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Praktikum 1'),
+      ),
+      body: Container(
+        color: Colors.blue, 
+        child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center, 
             children: [
-              const Text(
-                'yokosoo watashino gakusei',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 16),
-              ImagesWidget(),
+              TextWidget(text: 'welcome'),
+              TextWidget(text: 'バニュワンギ大学へようこそ'), 
+              SizedBox(height: 10),
+              ImageWidget(imagePath: 'assets/images/poliwangi.png'), 
             ],
           ),
         ),
