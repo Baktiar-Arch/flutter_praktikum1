@@ -14,7 +14,7 @@
 # SCREENSHOOT
 <img width="637" height="766" alt="image" src="https://github.com/user-attachments/assets/886965ce-05ed-40b2-a2da-b87c3b3fd494" />
 
-##PENJELASAN
+## TENJELASAN
 1. Buat Class Praktikum
 
 Penjelasan: Tahap ini melibatkan pembuatan class bernama Praktikum yang akan menjadi wadah utama untuk mengelola kombinasi gambar dan teks. Class ini biasanya merupakan subclass dari StatelessWidget atau StatefulWidget di Flutter.
